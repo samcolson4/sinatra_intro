@@ -4,4 +4,12 @@ img {
 }
 </style>
 <img src='http://bit.ly/1eze8aE'> <br>
-<h1> My name is <%= @name %> </h1>
+
+<% if @name %>
+	<h1> My name is <%= @name %> </h1>
+<% end %>
+<form action="/named-cat" method="get">
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+
