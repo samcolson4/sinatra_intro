@@ -14,6 +14,6 @@ get '/pairing' do
 end
 
 get '/cat' do
- @name = ["Sam", "Ollie", "Viktorija"].sample 
  erb(:index)
+   @name = ["Sam", "Ollie", "Viktorija"].sample 
 end

@@ -14,6 +14,5 @@ get '/pairing' do
 end
 
 get '/cat' do
- @name = ["Sam", "Ollie", "Viktorija"].sample 
- erb(:index)
+ '<img src='http://bit.ly/1eze8aE'</img>'
 end
