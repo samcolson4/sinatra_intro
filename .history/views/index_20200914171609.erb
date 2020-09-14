@@ -1,0 +1,15 @@
+<style>
+img { border: red dashed; }
+</style>
+
+<h1> My name is <%= @name %> </h1>
+
+<% if @name.nil? || @name == "" %>
+<form action="/named-cat">
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+<% end %>
+<br>
+<img src='http://bit.ly/1eze8aE'>
+
